@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import Index from '~/pages/index.vue'
+import Login from '~/pages/login.vue'
 import NotFound from '~/pages/404.vue'
 const routes = [
     {
@@ -11,6 +12,10 @@ const routes = [
         path: '/:pathMatch(.*)*',
         name: 'NotFound',
         component: NotFound
+    },
+    {
+        path: '/login',
+        component: Login
     },
 ]
 
